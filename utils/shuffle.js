@@ -2,8 +2,8 @@
 export function shuffle(deck){
     let count = 0;
     while (count < 1000) {
-        let index1 = Math.floor(Math.random() * 51);
-        let index2 = Math.floor(Math.random() * 51);
+        let index1 = Math.floor(Math.random() * 52);
+        let index2 = Math.floor(Math.random() * 52);
         
         if (index1 != index2) {
             let temp1 = deck[index1]
