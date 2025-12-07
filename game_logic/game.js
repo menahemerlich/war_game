@@ -2,14 +2,14 @@ import input from "analiza-sync";
 import dick from "../utils/export.js"
 
 
-function create_player(Name = 'Ai') {
+export function create_player(Name = 'Ai') {
     let player = {'name':Name,'hand':[],'won_pile':[]}
     return player}
 
 
-function init_game(){
+export function init_game(){
     let p2 = create_player()
-    let p1 = create_player(input('Please enter your name   '))
+    let p1 = create_player(input('Please enter your name: '))
     let deckShuffle = dick.createDeck()
     deckShuffle = dick.shuffle(deckShuffle)
     
@@ -20,7 +20,7 @@ function init_game(){
     return players}
 
 
-function  play_round(p1,p2){
+export function  play_round(p1,p2){
     let p1_rotation = p1["hand"].pop()
     let p2_rotation = p2["hand"].pop()
     if( p1_rotation['value'] > p2_rotation['value']){
@@ -35,7 +35,5 @@ function  play_round(p1,p2){
          console.log((`draw ${JSON.stringify(p2_rotation)}`))}}
     
 
-let exporting = [create_player,init_game,play_round]
 
-export{exporting}
 
