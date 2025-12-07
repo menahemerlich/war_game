@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000w\u0000a\u0000r\u0000_\u0000g\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
