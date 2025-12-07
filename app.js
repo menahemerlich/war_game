@@ -1,5 +1,4 @@
-import { init_game } from "./game_logic/game.js";
-import { play_round } from "./game_logic/game.js";
+import { init_game, play_round } from "./game_logic/game.js";
 
 let newGame = init_game();
 while (newGame.player_1.hand.length > 0 || newGame.player_2.hand.length > 0) {
